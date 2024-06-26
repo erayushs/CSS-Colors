@@ -160,6 +160,7 @@ body.append(ele);
 
 document.getElementById("inputBox").addEventListener("change", (e) => {
   document.getElementById("d").style.backgroundColor = e.target.value;
+  document.getElementById("inputBox").style.backgroundColor = e.target.value;
 });
 
 let li = document.getElementsByTagName("li");
