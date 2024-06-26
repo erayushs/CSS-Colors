@@ -9,7 +9,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin: 10px;
 }
 
 input {
@@ -17,7 +16,7 @@ input {
   padding: 10px;
   font-family: "Times New Roman", Times, serif;
   position: fixed;
-  left: 140px;
+  left: 40vw;
   top: 0;
 }
 
@@ -26,13 +25,12 @@ input:focus {
 }
 
 #d {
-  width: 120px;
-  height: 120px;
-  background-color: blanchedalmond;
-  border-radius: 10px;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   left: 0;
   top: 0;
+  z-index: -1;
 }
 
 #d:hover {
@@ -43,9 +41,10 @@ ul {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
-  gap: 1rem;
+  gap: 10px;
   border: 1px solid;
-  margin: 1rem;
+  margin: 4px;
+  margin-top: 1.5rem;
   padding: 2rem;
   border-radius: 4px;
 }

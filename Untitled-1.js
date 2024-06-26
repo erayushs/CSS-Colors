@@ -162,14 +162,11 @@ document.getElementById("inputBox").addEventListener("change", (e) => {
   document.getElementById("d").style.backgroundColor = e.target.value;
 });
 
-let len = document.getElementsByTagName("li").length;
+let li = document.getElementsByTagName("li");
 
-for (let i = 0; i < len; i++) {
-  document.getElementsByTagName("li")[i].addEventListener("click", (e) => {
+for (let i = 0; i < arr.length; i++) {
+  li[i].addEventListener("click", (e) => {
     document.getElementById("d").style.backgroundColor = e.target.innerHTML;
-    document.getElementsByTagName("li")[i].style.backgroundColor =
-      e.target.innerHTML;
-    if (document.getElementsByTagName("li")[i].innerHTML !== "white")
-      document.getElementsByTagName("li")[i].style.color = "white";
+    li[i].style.backgroundColor = e.target.innerHTML;
   });
 }
