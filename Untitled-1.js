@@ -165,11 +165,21 @@ document.getElementById("inputBox").addEventListener("change", (e) => {
 
 let li = document.getElementsByTagName("li");
 
-for (let i = 0; i < arr.length; i++) {
-  li[i].addEventListener("click", (e) => {
-    document.getElementById("d").style.backgroundColor = e.target.innerHTML;
-    li[i].style.backgroundColor = e.target.innerHTML;
-    document.getElementById("inputBox").style.backgroundColor =
-      e.target.innerHTML;
-  });
-}
+let mainBox = document.getElementById("d");
+
+let inputBox = document.getElementById("inputBox");
+
+// for (let i = 0; i < arr.length; i++) {
+//   li[i].addEventListener("click", (e) => {
+//     document.getElementById("d").style.backgroundColor = e.target.innerHTML;
+//     li[i].style.backgroundColor = e.target.innerHTML;
+//     document.getElementById("inputBox").style.backgroundColor =
+//       e.target.innerHTML;
+//   });
+// }
+
+document.querySelector("ul").addEventListener("click", (e) => {
+  mainBox.style.backgroundColor = e.target.innerHTML;
+  inputBox.style.backgroundColor = e.target.innerHTML;
+  e.target.parentNode.style.backgroundColor = e.target.innerHTML;
+});
