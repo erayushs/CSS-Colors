@@ -168,5 +168,7 @@ for (let i = 0; i < arr.length; i++) {
   li[i].addEventListener("click", (e) => {
     document.getElementById("d").style.backgroundColor = e.target.innerHTML;
     li[i].style.backgroundColor = e.target.innerHTML;
+    document.getElementById("inputBox").style.backgroundColor =
+      e.target.innerHTML;
   });
 }
