@@ -27,6 +27,7 @@ input:focus {
   width: 120px;
   height: 120px;
   background-color: blanchedalmond;
+  border-radius: 10px;
 }
 
 #d:hover {
@@ -41,9 +42,10 @@ ul {
   border: 1px solid;
   margin: 1rem;
   padding: 2rem;
+  border-radius: 4px;
 }
 
-li::first-letter {
+p::first-letter {
   text-transform: capitalize;
 }
 
@@ -51,10 +53,17 @@ li {
   margin: 2px;
   font-size: large;
   border: 1px solid;
-  padding: 6px;
-  /* min-width: 150px; */
-  max-width: 200px;
   height: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+
+p {
+  text-align: center;
+  padding: 10px;
 }
 
 li:hover {

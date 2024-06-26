@@ -151,7 +151,7 @@ let arr = [
 let ele = document.createElement("ul");
 
 for (let i = 0; i < arr.length; i++) {
-  ele.innerHTML += `<li>${arr[i]}</li>`;
+  ele.innerHTML += `<li><p>${arr[i]}</p></li>`;
 }
 
 let body = document.getElementsByTagName("body")[0];
